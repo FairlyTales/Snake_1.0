@@ -1,4 +1,4 @@
-import { update as updateSnake, draw as drawSnake, snakeIntersection, getSnakeHead } from './snake.js'
+import { update as updateSnake, draw as drawSnake, snakeIntersection, getSnakeHead } from '../snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideOfGrid } from './grid.js'
 import { speedUp } from "./input.js";
@@ -20,7 +20,7 @@ function main(currentTime) {
   }
 
   // call this method again to render the next frame
-  window.requestAnimationFrame(main);
+  window.requestAnimationFrame(main); //! read more about this method and how it works
 
   // calculate how many seconds have passed since the last render
   const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000;

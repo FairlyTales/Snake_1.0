@@ -1,3 +1,4 @@
+change keydown to keyup or smth to make the controls more responsive
 made the gameboard responsive
 restyle and repaint the whole game
 add restart modal with score

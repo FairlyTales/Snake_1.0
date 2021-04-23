@@ -1,4 +1,4 @@
-import { getInputDirection } from "./input.js";
+import { getInputDirection } from "./js/input.js";
 
 const snakeBody = [
   { x: 15, y: 15}
