@@ -1,0 +1,4 @@
+made the gameboard responsive
+restyle and repaint the whole game
+add restart modal with score
+add modal with difficulty (speed) setting before the game (maybe add field size setting too)
