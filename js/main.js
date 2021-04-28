@@ -1,7 +1,6 @@
 import { update as updateSnake, draw as drawSnake, snakeIntersection, getSnakeHead } from '../snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideOfGrid } from './grid.js'
-import { speedUp } from "./input.js";
 
 let lastRenderTime = 0;
 let gameOver = false;
