@@ -1,4 +1,4 @@
-import { update as updateSnake, draw as drawSnake, snakeIntersection, getSnakeHead } from '../snake.js'
+import { update as updateSnake, draw as drawSnake, snakeIntersection, getSnakeHead } from './snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideOfGrid } from './grid.js'
 
@@ -10,11 +10,7 @@ const gameBoard = document.querySelector('#game-board');
 function main(currentTime) {
 
   if (gameOver) {
-    if (confirm('Wasted. Wanna try again?')) {
-      location.reload();
-    } else {
-      //! placeholder, add some more stuff here
-    }
+    document.querySelector('.modal--after-game').classList.add('modal--show')
     return;
   }
 

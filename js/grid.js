@@ -1,4 +1,4 @@
-const GRID_SIZE = 29;
+const GRID_SIZE = 19;
 
 export function randomGridPosition() {
   return {

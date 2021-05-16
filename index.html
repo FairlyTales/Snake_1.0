@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="./js/main.js" type="module" defer></script>
-  <title>Snake</title>
-</head>
-<body class="body">
-  <div class="wrapper">
-    <div id="game-board"></div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snake</title>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <div class="modal modal--before-game">
+        <span
+          >Fruits are red, walls are blue, snake is also blue. Eat fruits and
+          avoid hitting walls and snake.</span
+        >
+        <span>Press WASD or Arrow Keys to start the game.</span>
+        <span>Good luck!</span>
+      </div>
+      <div class="modal modal--after-game">
+        <span>Game Over</span>
+        <button id="restart-btn">Try again!</button>
+      </div>
+      <div id="game-board"></div>
+    </div>
+    <script src="js/main.js" type="module" defer></script>
+  </body>
 </html>
