@@ -14,6 +14,8 @@ window.addEventListener('keydown', e => {
   switch (e.key) {
     case 'w':
     case 'W':
+    case 'ц':
+    case 'Ц':
     case 'ArrowUp':
       // remove pre-game overlay
       if(modalShown === true) document.querySelector('.modal--before-game').classList.add('modal--hide');
@@ -30,6 +32,8 @@ window.addEventListener('keydown', e => {
 
     case 's':
     case 'S':
+    case 'ы':
+    case 'Ы':
     case 'ArrowDown':
       if(modalShown === true) document.querySelector('.modal--before-game').classList.add('modal--hide');
       if (lastInputDirection.y === -1) break
@@ -39,6 +43,8 @@ window.addEventListener('keydown', e => {
 
     case 'a':
     case 'A':
+    case 'ф':
+    case 'Ф':
     case 'ArrowLeft':
       if(modalShown === true) document.querySelector('.modal--before-game').classList.add('modal--hide');
       if (lastInputDirection.x === 1) break
@@ -48,6 +54,8 @@ window.addEventListener('keydown', e => {
 
     case 'd':
     case 'D':
+    case 'в':
+    case 'В':
     case 'ArrowRight':
       if(modalShown === true) document.querySelector('.modal--before-game').classList.add('modal--hide');
       if (lastInputDirection.x === -1) break
