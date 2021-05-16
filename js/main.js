@@ -1,4 +1,4 @@
-import { update as updateSnake, draw as drawSnake, snakeIntersection, getSnakeHead } from './snake.js'
+import { update as updateSnake, draw as drawSnake, snakeIntersection, getSnakeHead, snakeBody } from './snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideOfGrid } from './grid.js'
 
@@ -10,6 +10,8 @@ const gameBoard = document.querySelector('#game-board');
 function main(currentTime) {
 
   if (gameOver) {
+    const score = (snakeBody.length - 1).toString();
+    document.querySelector('#score').innerHTML = score;
     document.querySelector('.modal--after-game').classList.add('modal--show')
     return;
   }
