@@ -1,4 +1,4 @@
-# Snake
+# Snake 1.0
 
 Just a snake, nothing fancy.
 
